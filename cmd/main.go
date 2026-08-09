@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 
+	"github.com/DiegoHachig/ecommerce-management-system-go/database"
 	"github.com/DiegoHachig/ecommerce-management-system-go/internal/inventory"
 	"github.com/DiegoHachig/ecommerce-management-system-go/internal/orders"
 	"github.com/DiegoHachig/ecommerce-management-system-go/internal/products"
@@ -20,6 +21,7 @@ func (a *inventoryAdapter) GetProductID() string {
 
 func main() {
 
+	database.ConnectDB()
 	repo := &products.MemoryRepository{}
 
 	service := products.NewProductService(repo)
