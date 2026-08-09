@@ -2,11 +2,16 @@ package users
 
 import "github.com/DiegoHachig/ecommerce-management-system-go/database"
 
+// MySQLRepository implementa el acceso a datos
+// utilizando MySQL y GORM para la persistencia
+// de usuarios.
 type MySQLRepository struct{}
 
-// Save guarda un usuario en MySQL.
+// Save almacena un usuario en la base de datos
+// convirtiendo el modelo de negocio en una entidad GORM.
 func (r *MySQLRepository) Save(user User) error {
-
+	// Conversión del modelo de dominio
+	// a entidad persistente de base de datos.
 	entity := UserEntity{
 		Name:     user.GetName(),
 		Email:    user.GetEmail(),
@@ -16,7 +21,8 @@ func (r *MySQLRepository) Save(user User) error {
 	return database.DB.Create(&entity).Error
 }
 
-// GetAll obtiene todos los usuarios.
+// GetAll recupera todos los usuarios almacenados
+// en MySQL y los transforma en objetos User.
 func (r *MySQLRepository) GetAll() ([]User, error) {
 
 	var entities []UserEntity
@@ -28,7 +34,8 @@ func (r *MySQLRepository) GetAll() ([]User, error) {
 	}
 
 	var usersList []User
-
+	// Conversión de entidades GORM
+	// a objetos de negocio User.
 	for _, entity := range entities {
 
 		user, _ := NewUser(

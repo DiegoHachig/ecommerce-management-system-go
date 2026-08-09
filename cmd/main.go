@@ -22,6 +22,8 @@ func (a *inventoryAdapter) GetProductID() string {
 func main() {
 
 	database.ConnectDB()
+	// AutoMigrate crea o actualiza automáticamente
+	// las tablas necesarias en MySQL.
 	database.DB.AutoMigrate(
 		&products.ProductEntity{},
 		&users.UserEntity{},
