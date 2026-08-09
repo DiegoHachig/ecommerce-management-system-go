@@ -22,7 +22,11 @@ func (a *inventoryAdapter) GetProductID() string {
 func main() {
 
 	database.ConnectDB()
-	repo := &products.MemoryRepository{}
+	database.DB.AutoMigrate(
+		&products.ProductEntity{},
+		&users.UserEntity{},
+	)
+	repo := &products.MySQLRepository{}
 
 	service := products.NewProductService(repo)
 
@@ -51,7 +55,7 @@ func main() {
 
 	fmt.Println("=== USUARIOS ===")
 
-	userRepo := &users.MemoryRepository{}
+	userRepo := &users.MySQLRepository{}
 	userService := users.NewUserService(userRepo)
 
 	user, err := users.NewUser(
