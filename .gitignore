@@ -31,3 +31,7 @@ go.work.sum
 # .idea/
 # .vscode/
 *.mp4
+*.avi
+*.mov
+*.mkv
+*.zip

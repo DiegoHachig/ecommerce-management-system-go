@@ -1,1 +1,6 @@
 package users
+
+type UserRepository interface {
+	Save(user User) error
+	GetAll() ([]User, error)
+}
