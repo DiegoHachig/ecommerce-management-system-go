@@ -269,31 +269,153 @@ Se desarrolló una arquitectura orientada a servicios utilizando estructuras com
 
 # Servicios Web
 
-El proyecto contempla la implementación de servicios web REST para la comunicación cliente-servidor.
+El Sistema de Gestión de E-commerce fue diseñado con una arquitectura modular que permite evolucionar hacia una solución basada en Servicios Web REST.
 
-Servicios considerados dentro de la solución:
+Los servicios web facilitan la comunicación entre aplicaciones mediante protocolos HTTP y permiten que sistemas web, móviles o externos consuman información del sistema de forma segura y estandarizada.
 
-1. Gestión de usuarios.
-2. Registro de usuarios.
-3. Consulta de usuarios.
-4. Gestión de productos.
-5. Registro de productos.
-6. Consulta de productos.
-7. Gestión de pedidos.
-8. Generación de reportes.
+## Servicios Disponibles
 
-Formato de intercambio:
+### Usuarios
+
+#### Consultar Usuarios
+
+```http
+GET /users
+```
+
+Obtiene el listado de usuarios registrados.
+
+#### Registrar Usuario
+
+```http
+POST /users
+```
+
+Registra un nuevo usuario en el sistema.
+
+---
+
+### Productos
+
+#### Consultar Productos
+
+```http
+GET /products
+```
+
+Obtiene el catálogo de productos registrados.
+
+#### Registrar Producto
+
+```http
+POST /products
+```
+
+Registra un nuevo producto.
+
+---
+
+### Inventario
+
+#### Consultar Inventario
+
+```http
+GET /inventory
+```
+
+Permite visualizar las existencias disponibles.
+
+#### Registrar Inventario
+
+```http
+POST /inventory
+```
+
+Permite agregar registros de inventario.
+
+---
+
+### Pedidos
+
+#### Consultar Pedidos
+
+```http
+GET /orders
+```
+
+Obtiene los pedidos registrados.
+
+#### Crear Pedido
+
+```http
+POST /orders
+```
+
+Permite registrar un nuevo pedido.
+
+---
+
+## Resumen de Servicios Web
+
+| Endpoint | Método | Funcionalidad |
+|-----------|----------|-------------|
+| /users | GET | Consultar usuarios |
+| /users | POST | Registrar usuario |
+| /products | GET | Consultar productos |
+| /products | POST | Registrar producto |
+| /inventory | GET | Consultar inventario |
+| /inventory | POST | Registrar inventario |
+| /orders | GET | Consultar pedidos |
+| /orders | POST | Crear pedido |
+
+**Total de servicios web definidos: 8**
+
+---
+
+# Serialización JSON
+
+La comunicación entre los servicios web utiliza JSON (JavaScript Object Notation), permitiendo intercambiar información de forma estructurada y compatible con diferentes plataformas.
+
+## Ejemplo de Producto
 
 ```json
 {
   "id": 1,
-  "nombre": "Producto Ejemplo",
-  "precio": 120.50,
+  "name": "Laptop Lenovo",
+  "price": 850.00,
   "stock": 10
 }
 ```
 
-La serialización de datos se realiza mediante JSON.
+## Ejemplo de Usuario
+
+```json
+{
+  "id": 1,
+  "name": "Diego Hachig",
+  "email": "diego@email.com",
+  "phone": "1234567890"
+}
+```
+
+## Ejemplo de Pedido
+
+```json
+{
+  "id": 1,
+  "userId": 1,
+  "total": 850.00,
+  "status": "Pendiente"
+}
+```
+
+### Ventajas del uso de JSON
+
+- Formato ligero y fácil de interpretar.
+- Compatibilidad con aplicaciones web y móviles.
+- Integración sencilla con APIs REST.
+- Amplio soporte en diferentes lenguajes de programación.
+- Facilita el intercambio de información entre sistemas.
 
 ---
 
