@@ -2,9 +2,14 @@ package products
 
 import "github.com/DiegoHachig/ecommerce-management-system-go/database"
 
+// MySQLRepository implementa el acceso a datos
+// utilizando MySQL y GORM para la persistencia
+// de productos.
 type MySQLRepository struct{}
 
-// Save guarda un producto en MySQL.
+// Save almacena un producto en la base de datos
+// convirtiendo el modelo de negocio en una entidad GORM.
+
 func (r *MySQLRepository) Save(product Product) error {
 
 	entity := ProductEntity{
