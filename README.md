@@ -508,6 +508,78 @@ El sistema puede utilizarse en:
 
 ---
 
+# Justificación del Proyecto
+
+## Criterio de Selección del Tema
+
+Se seleccionó el desarrollo de un Sistema de Gestión de E-commerce debido a la creciente importancia del comercio electrónico en los entornos empresariales actuales.
+
+Las organizaciones requieren herramientas que permitan administrar productos, usuarios, inventarios y pedidos de forma eficiente, reduciendo tiempos operativos y mejorando el control de la información.
+
+Además, este tipo de sistema permite aplicar de forma práctica los conceptos estudiados durante la asignatura, integrando programación funcional, estructuras de datos, programación orientada a objetos, persistencia de datos y servicios web.
+
+---
+
+# Aplicaciones Prácticas
+
+El sistema desarrollado puede ser utilizado en diferentes contextos empresariales y comerciales.
+
+Entre sus principales aplicaciones se encuentran:
+
+- Tiendas virtuales.
+- Comercios electrónicos.
+- Negocios de venta de productos físicos.
+- Gestión de inventarios.
+- Control de pedidos.
+- Administración de clientes.
+- Seguimiento de ventas.
+- Generación de reportes operativos.
+
+La arquitectura implementada también permite futuras ampliaciones para adaptarse a diferentes necesidades organizacionales.
+
+---
+
+# Reflexión sobre lo Aprendido
+
+Durante el desarrollo del proyecto se aplicaron los conocimientos adquiridos en las cuatro unidades de la asignatura.
+
+La implementación del sistema permitió comprender la importancia de la organización del código mediante paquetes y funciones, el uso de estructuras de datos para el manejo de información y la aplicación de principios de Programación Orientada a Objetos como encapsulación e interfaces.
+
+Asimismo, se fortalecieron conocimientos relacionados con persistencia de datos utilizando MySQL y GORM, así como la preparación de la arquitectura para futuras implementaciones de servicios web y concurrencia.
+
+---
+
+# Dificultades Encontradas
+
+Durante el desarrollo se presentaron algunos desafíos técnicos:
+
+- Organización de la arquitectura del proyecto.
+- Implementación de interfaces y repositorios.
+- Integración con MySQL mediante GORM.
+- Gestión de dependencias en Go.
+- Diseño de estructuras reutilizables.
+- Coordinación de los diferentes módulos del sistema.
+
+Estos desafíos permitieron adquirir experiencia práctica en el desarrollo de aplicaciones empresariales utilizando Go.
+
+---
+
+# Aplicaciones Futuras
+
+Como líneas de mejora futura se plantean:
+
+- Implementación completa de APIs REST.
+- Aplicación móvil para clientes.
+- Integración con servicios en la nube.
+- Facturación electrónica.
+- Dashboards de Business Intelligence.
+- Inteligencia Artificial para análisis predictivo.
+- Arquitectura basada en microservicios.
+
+Estas mejoras permitirán transformar el sistema en una solución empresarial más completa y escalable.
+
+---
+
 # Conclusiones
 
 - Se desarrolló un Sistema de Gestión de E-commerce utilizando Go.
