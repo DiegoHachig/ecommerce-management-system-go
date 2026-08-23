@@ -596,6 +596,48 @@ Las pruebas realizadas en este entorno incluyen:
 
 ---
 
+# Concurrencia
+
+Como parte de la Unidad 4 se desarrolló un ambiente de pruebas para la implementación de concurrencia utilizando Goroutines y Channels.
+
+Funcionalidades evaluadas:
+
+- Ejecución concurrente de tareas.
+- Comunicación entre procesos mediante canales.
+- Generación simultánea de reportes.
+
+Tecnologías utilizadas:
+
+- Goroutines.
+- Channels.
+- Package time.
+
+Ejemplo conceptual:
+
+Reporte de Ventas
+       │
+       ▼
+ Goroutine
+       │
+       ▼
+ Channel
+       │
+       ▼
+ Resultado
+
+Reporte de Inventario
+       │
+       ▼
+ Goroutine
+       │
+       ▼
+ Channel
+       │
+       ▼
+ Resultado
+
+ ---
+
 
 # Conclusiones
 
