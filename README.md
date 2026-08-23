@@ -436,17 +436,63 @@ La comunicación entre los servicios web utiliza JSON (JavaScript Object Notatio
 
 # Visualización del Futuro
 
-La evolución futura del sistema contempla:
+## Ecommerce Management System 2030
 
-- Implementación completa de APIs REST.
-- Aplicación móvil para clientes.
-- Integración con Inteligencia Artificial para análisis de ventas.
-- Dashboards de Business Intelligence.
+La evolución futura del sistema contempla la transformación de la aplicación actual hacia una plataforma empresarial inteligente basada en tecnologías modernas.
+
+```text
+Sistema Actual
+       │
+       ▼
+Servicios Web REST
+       │
+       ▼
+Aplicación Web y Móvil
+       │
+       ▼
+Computación en la Nube
+       │
+       ▼
+Business Intelligence
+       │
+       ▼
+Inteligencia Artificial
+       │
+       ▼
+Microservicios
+       │
+       ▼
+Analítica Predictiva
+```
+
+### Tecnologías Futuras Consideradas
+
+- APIs REST completas para integración entre sistemas.
+- Aplicaciones móviles para acceso remoto.
 - Infraestructura en la nube.
-- Facturación electrónica.
+- Bases de datos distribuidas.
+- Inteligencia Artificial para predicción de ventas.
+- Business Intelligence para análisis de información.
 - Arquitectura basada en microservicios.
-- Procesamiento concurrente avanzado mediante Go.
+- Automatización de procesos empresariales.
 
+---
+
+# Explicación de la Visualización del Futuro
+
+La visualización muestra la evolución tecnológica proyectada para el Sistema de Gestión de E-commerce.
+
+Actualmente el sistema permite administrar usuarios, productos, inventario, pedidos y reportes mediante una arquitectura modular desarrollada en Go.
+
+Como siguiente etapa, el sistema podría incorporar servicios web REST que permitan la comunicación con aplicaciones externas y clientes web.
+
+Posteriormente se podrían desarrollar aplicaciones móviles para facilitar el acceso desde cualquier dispositivo.
+
+La incorporación de infraestructura en la nube permitiría mejorar la disponibilidad, seguridad y escalabilidad del sistema, facilitando el crecimiento de la plataforma.
+
+Mediante herramientas de Business Intelligence y Analítica de Datos, la organización podría obtener indicadores de rendimiento, conocer tendencias de consumo y mejorar la toma de decisiones.
+
+Finalmente, la integración de Inteligencia Artificial permitiría generar predicciones de ventas, recomendaciones de productos y automatización de procesos, convirtiendo la aplicación en una solución empresarial inteligente y escalable.
 ---
 
 # Aplicaciones Prácticas
