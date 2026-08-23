@@ -580,6 +580,23 @@ Estas mejoras permitirán transformar el sistema en una solución empresarial m�
 
 ---
 
+# Ambiente de Desarrollo y Pruebas
+
+Para la implementación de los temas correspondientes a la Unidad 4 (Concurrencia, Servicios Web, JSON y Testing), se utilizará un entorno de pruebas independiente con el objetivo de preservar la estabilidad de la aplicación principal.
+
+Esta estrategia permite validar nuevas funcionalidades sin afectar los módulos operativos de Usuarios, Productos, Inventario, Pedidos y Reportes que actualmente se encuentran funcionando correctamente.
+
+Las pruebas realizadas en este entorno incluyen:
+
+- Implementación de Servicios Web REST.
+- Serialización de datos mediante JSON.
+- Pruebas unitarias.
+- Pruebas de concurrencia con Goroutines.
+- Validación de nuevas funcionalidades antes de su integración definitiva.
+
+---
+
+
 # Conclusiones
 
 - Se desarrolló un Sistema de Gestión de E-commerce utilizando Go.
